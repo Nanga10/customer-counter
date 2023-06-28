@@ -1,4 +1,5 @@
 let count = 0;
+let saveCount = [];
 let countEl = document.getElementById("count-el");
 let saveEl = document.getElementById("save-el");
 
@@ -10,8 +11,13 @@ countBtn.addEventListener("click", function () {
   countEl.textContent = count;
 });
 
+console.log(saveCount.length);
+
 saveBtn.addEventListener("click", function () {
-  saveEl.textContent += ` - ${count}`;
+  saveCount.push(count);
+
+  saveEl.textContent = saveCount.join(" - "); // array seperator customised to "-"
+
   count = 0;
   countEl.textContent = count;
 });

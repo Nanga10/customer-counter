@@ -9,11 +9,30 @@
   flex-direction: column;
 }
 
-.app h1, p{
+.app h1,
+h2,
+p {
   text-align: center;
 }
+.app h1,
+h2 {
+  font-weight: 100;
+}
+.app p {
+  font-size: 30px;
+}
+.app button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+}
 
-.app button{
-    margin: 10px;
-    padding: 10px;
+#countBtn-el {
+  background-color: #1cbd57;
+  color: #ffff;
+}
+
+#saveBtn-el {
+  background-color: #CC2E22;
+  color: #ffff;
 }
